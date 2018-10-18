@@ -6,7 +6,7 @@ Team Name: Anti-Social
 # 1.0 Promotional Materials
 
 # 2.0 Prototypes
-Paper Prototype - images are uploaded
+Paper Prototype - images are uploaded (social-media/images)
 Invsionapp prototype - https://projects.invisionapp.com/share/6KOC0DHF3Y4#/screens 
 
 # 3.0 Project Summary
@@ -18,8 +18,31 @@ In essence, it forces them to stop and ponder, “Do we really know this person 
 # 4 Project Process
 
 ## Phase 1
+### Research 
 
-### Research
+Problem space: Reducing the negative effects on emotion and well-being that are created from the use of social media.
+
+Research was conducted on the problem space to understand social media and its associated negative mental health effects to users. From this research, both studies and individual reports have shown that extended use of social media may lead to feelings of loneliness and depression. 
+
+From the initial research conducted, it has been shown that use of social networks such as Facebook, Instagram and Snapchat can lead to reductions in well-being related to lowered self-confidence and life satisfaction, feelings of exclusion, anxiety, lowered self-awareness, depression and loneliness. [7][11][14][16] It is commonly understood that these effects arise from users comparing themselves with others, leading to social media platforms becoming a 'competition' for beauty and self-image. [12][15]
+
+With an estimated number of 3.2 billion social network users worldwide, there is no doubt that this is a big problem affecting the people of our society.[1] Social media has a reach of 42% of the global population and is growing in impact at a year-on-year rate of 13%. [6] Among young adults, research has found that 90% of college students have used Facebook and that 97% of them check it daily with an average browsing time of 1 hour and 40 minutes.[4]
+
+While social network users tend to be more well connected, greater social connectedness also doesn't necessarily translate into meaningful and authentic friendships in reality. [8] Social network use has also been shown to reduce numbers and lower quality of face-to-face interactions overall. [5]
+It has also shown that use of social networks such as Facebook, Instagram and Snapchat can lead to reductions in well-being related to lowered self-confidence and life satisfaction, feelings of exclusion, anxiety, lowered self-awareness, depression and loneliness. 
+
+On the other hand, prior research conducted before the beginning of the project also showed that there are undeniably 'good' aspects to the use of social media. These are features that contribute positively to well-being, and include:
+
+Sharing feelings and stories [11]
+Learning and understanding the self through writing and self-expression [9]
+Finding out about real-life events, leading to 'traditional' social interaction [11]
+Building friendships [7]
+Learning about the surrounding world for young adolescents [7]
+Further research has also shown that between those who use Facebook and those who do not, Facebook users have higher values of social support, life satisfaction and subjective happiness while non-users have significantly higher values of depression symptoms. [13]
+
+Overall, social networks may be looked at as a double-edged sword for teens and young adults. Among other things, they are a source of anxiety and concern for self-image, but also a method through which they can build friendships, express themselves and learn.
+
+
 #### industry research
 
 -refer to our wiki 
