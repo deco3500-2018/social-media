@@ -35,61 +35,35 @@ Building friendships
 Overall, social networks may be looked at as a double-edged sword for teens and young adults. Among other things, they are a source of anxiety and concern for self-image, but also a method through which they can build friendships, express themselves and learn.
 
 
-
-
 ### Existing solutions and crituqie
 
 RSPH Awareness Campaigns - .....
+
 DistractaGone - .....
 
-### our design
-
-we
-
-
-
-
-
-### Solutions brainstorming
-
-We came up with some solutions.....
+### our design and wireframe
 
 
 # phase2
-#### industry research
-
--refer to our wiki 
+#### Requirement
 
 ### interviews/surveys
 
 - interviews' results shown and conclude findings
 
-### sketches & wireframe
-
+### user testing (paper prototype)
 - need some 'sketches' and wireframes to show the process
 
-### paper prototype
+### invisionapp development
 
-- images are uploaded
-
-## Phase 2
-
-### user testing on paper prototype
-
-- nick is going to take some pics of hands using the paper prototype and add some info here
-
-### invisionapp prototype
-
-- design challenges and findings (tried marvel app but changed to invisionapp, challenges faced using marvel app were?)
-
-### refine invisionapp prototype (based on feedback)
-
-- findings
+- getting feedback from the user testing on the paper prototype user testing
 
 ## Phase 3
+### user testing on invisionapp 
+### final touch up
+- design challenges and findings (tried marvel app but changed to invisionapp, challenges faced using marvel app were?)
+### end product
 
-### final user testing
-### final touch up on invisionapp prototype
-### web-based prototype
+
 
 Check out our [Project Proposal](https://github.com/deco3500-2018/social-media/wiki/Project-Proposal)
