@@ -1,0 +1,6 @@
+ - sentiment analysis comparison between your content and others
+ - seeing whether people are tired or already in a bad mood and prevent them from seeing content they won't like
+ - google sentiment analysis api
+ - modify HTML in the browser and survey users to see how the feed changes their emotional state
+ 
+ - perhaps we can inject things into feed which make people feel better about themselves
