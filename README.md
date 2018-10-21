@@ -15,9 +15,9 @@ Our project aims to keep our social media (Facebook and Instagram) sanitized wit
 
 In essence, it forces them to stop and ponder, “Do we really know this person and want them to have access to our information?” The odds are, they do not.
 
-We also hope to have developed a working and presentable prototype which demonstrates a solution for helping young adults deal with being overwhelmed by social media. This could come in the form of a web/mobile application, or follow some other interaction paradigm such as tangible or persuasive computing.
+We also strived to develop a working and presentable prototype which presents a solution for helping young adults effectively manage social media and prevent feelings of overwhelm. This could come in the form of a web/mobile application, or follow an interaction paradigm such as tangible or persuasive computing.
 
-# 4 Project Process
+# 4.0 Project Process
 
 ## Phase 1
 ### Research 
