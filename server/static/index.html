@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./login.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">  
+    <title>Blaze</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Login with</h1>
+        <img src="/assets/instagram_logo.svg">
+        <input id="ig_username" type="text" placeholder="Username">
+        <input id="submit" type="button" placeholder="Username" value="Login">
+    </div>
+    <img id="blaze_logo" src="/assets/blaze_logo.png">
+    <script>
+        document.querySelector('#ig_username').addEventListener('keydown', (event) => {
+            if (event.keyCode == 13) {
+                submit();
+            }
+        });
+
+        document.querySelector('#submit').addEventListener('click', submit, false);
+
+        function submit() {
+            let username = document.querySelector('#ig_username').value;
+
+            if (username.length === 0) {
+                alert('Please enter a valid username');
+                return;
+            }
+
+            window.localStorage.setItem('username', username);
+
+            document.querySelector('.wrapper').style.opacity = '0';
+            window.location.href = "/questions";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.wrapper {
+    transition: opacity 0.3s;
+}
+
+.wrapper h1 {
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.wrapper img {
+    width: 60vw;
+}
+
+.wrapper {
+    position: absolute;
+    top: 24vh;
+    width: 60vw;
+}
+
+input {
+    width: 60vw;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid #AAAAAA;
+    padding: 15px 40px;
+    font-size: 35px;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto', sans-serif;
+}
+
+#ig_username {
+    margin-top: 40px;
+}
+
+#submit {
+    background-image: linear-gradient(to right, rgb(90, 49, 145), rgb(43, 53, 142));
+    margin-top: 40px;
+    font-weight: normal;
+    color: white;
+}
+
+#submit:hover {
+    filter: brightness(1.4);
+}
+
+#blaze_logo {
+    width: 60px;
+    position: fixed;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%);
+}
