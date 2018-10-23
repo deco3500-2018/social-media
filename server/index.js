@@ -59,6 +59,7 @@ app.post('/submit-data', (req, res) => {
     });
 
     // add followers to database
+    
 });
 
 app.get('/recommendations-data', (req, res) => {
