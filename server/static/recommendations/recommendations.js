@@ -130,7 +130,7 @@ function populateFollowDetail(username) {
     let followDetail = document.querySelector('#follow-detail');
     followDetail.innerHTML = `
         <div class="heading">
-            <h1>${ user.name.split(" ")[0] } followers are</h1>
+            <h1>${ user.name.split(" ")[0] }'s followers are</h1>
             <h1 class="large">${ user.percentage }%</h1>
             <h1>more likely to be sadder.</h1>
         </div>
