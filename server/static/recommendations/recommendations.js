@@ -1,80 +1,18 @@
 window.onload = init;
 
-let data = {
-    "users": [
-        {
-            "name": "Darren Fu",
-            "username": "john.mturk",
-            "percentage": 86,
-            "postsPerWeek": 15,
-            "averageLikes": 247,
-            "profilePic": "/assets/test_profile_pic.jpg",
-            "photos": [
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png"
-            ]
-        },
-
-        {
-            "name": "Jacob Ellis",
-            "username": "jellis_much",
-            "percentage": 50,
-            "postsPerWeek": 28,
-            "averageLikes": 341,
-            "profilePic": "/assets/test_profile_pic.jpg",
-            "photos": [
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png"
-            ]
-        },
-
-        {
-            "name": "Edwin Matthews",
-            "username": "matty_e6",
-            "percentage": 60,
-            "postsPerWeek": 4,
-            "averageLikes": 111,
-            "profilePic": "/assets/test_profile_pic.jpg",
-            "photos": [
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png"
-            ]
-        },
-
-        {
-            "name": "Andrew Davies",
-            "username": "ilovedeco3500",
-            "percentage": 74,
-            "postsPerWeek": 100,
-            "averageLikes": 118,
-            "profilePic": "/assets/test_profile_pic.jpg",
-            "photos": [
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png"
-            ]
-        }
-    ]
-};
-
 function init() {
     getData().then(updateFollowList);
 }
 
 function getData() {
-    localStorage.setItem('recommendations', JSON.stringify(data));
-    return Promise.resolve(data);
+    return new Promise((resolve, err) => {
+        fetch(`/recommendations-data?username=${ getUsername() }`)
+        .then( response => response.json())
+        .then( data => {
+            localStorage.setItem('recommendations', JSON.stringify(data));
+            resolve(data);
+        });
+    });
 }
 
 function updateFollowList(data) {
@@ -149,4 +87,8 @@ function populateFollowDetail(username) {
 
 function getRecommendations() {
     return JSON.parse(localStorage.getItem('recommendations'));
+}
+
+function getUsername() {
+    return localStorage.getItem('username');
 }
