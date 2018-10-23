@@ -75,7 +75,7 @@ function populateFollowDetail(username) {
 
         <h1 class="post-count"><span class="dark">${ user.postsPerWeek }</span> posts per week</h1>
 
-        <h1><span class="dark">${ user.averageLikes }</span> likes on average</h1>
+        <h1><span class="dark">${ Math.round(user.averageLikes) }</span> likes on average</h1>
 
         <div class="gallery">
             ${

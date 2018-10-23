@@ -2,74 +2,10 @@ const express = require('express')
 const bodyParser = require('body-parser');
 const config = require('./config');
 const mysql = require('mysql');
+const spawn = require("child_process").spawn;
 
-let data = {
-    "users": [
-        {
-            "name": "Darren Fu",
-            "username": "john.mturk",
-            "percentage": 86,
-            "postsPerWeek": 15,
-            "averageLikes": 247,
-            "profilePic": "/assets/test_profile_pic.jpg",
-            "photos": [
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png"
-            ]
-        },
-
-        {
-            "name": "Jacob Ellis",
-            "username": "jellis_much",
-            "percentage": 50,
-            "postsPerWeek": 28,
-            "averageLikes": 341,
-            "profilePic": "/assets/test_profile_pic.jpg",
-            "photos": [
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png"
-            ]
-        },
-
-        {
-            "name": "Edwin Matthews",
-            "username": "matty_e6",
-            "percentage": 60,
-            "postsPerWeek": 4,
-            "averageLikes": 111,
-            "profilePic": "/assets/test_profile_pic.jpg",
-            "photos": [
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png"
-            ]
-        },
-
-        {
-            "name": "Andrew Davies",
-            "username": "ilovedeco3500",
-            "percentage": 74,
-            "postsPerWeek": 100,
-            "averageLikes": 118,
-            "profilePic": "/assets/test_profile_pic.jpg",
-            "photos": [
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png",
-                "/assets/photo.png"
-            ]
-        }
-    ]
-};
+let igUsername;
+let igPassword;
 
 let db = mysql.createConnection({
   host     : config.db.host,
@@ -123,6 +59,7 @@ app.post('/submit-data', (req, res) => {
     });
 
     // add followers to database
+    
 });
 
 app.get('/recommendations-data', (req, res) => {
@@ -141,20 +78,93 @@ app.get('/recommendations-data', (req, res) => {
     
     let users = new Array();
     db.query(query, (err, rows, fields) => {
+        // record
         users = rows.map( row => 
             ({
                 username: row['username'],
                 percentage: 100 - row['score'] / 5 * 100
             })
         );
-    });
-    
-    res.send(JSON.stringify({
-        "users": users
-    }));
 
+            // check for ig credentials
+        if (!igUsername || !igPassword) {
+            console.log("Can't find Instagram credentials");
+            return;
+        }
+        console.log(`Instagram | U: ${igUsername} P: ${igPassword}`);
+
+        users.pop;
     
+        // query python ig scraper
+        Promise.all( users.map( user => {
+            return new Promise((res, err) => {
+                let output = "";
+                let pythonProcess = spawn('python', [`python/get_user_cached.py`, "-u", `"${igUsername}"`, "-p", `"${igPassword}"`, "-settings", `${__dirname}/python/credentials.json`, "-uu", `${user.username}`]);
+                pythonProcess.stdout.on('data', (data) => {
+                    output += data.toString();
+                });
+                pythonProcess.on('close', () => {
+                    let userJSON = JSON.parse(output);
+                    console.log(userJSON);
+                    res({
+                        ...user,
+                        name: userJSON.full_name,
+                        profilePic: userJSON.profile_pic_url,
+                        photos: userJSON.feed.items.slice(0, 6).map(item => {
+                            if (item.image_versions2) {
+                                return item.image_versions2.candidates[1].url
+                            } else if (item.carousel_media) {
+                                return item.carousel_media[0].image_versions2.candidates[1].url
+                            }
+                        }),
+                        postsPerWeek: postsPerWeek(userJSON),
+                        averageLikes: averageLikes(userJSON)
+                    });
+                });
+            });
+        })).then(users => {
+            res.send(JSON.stringify({
+                "users": users
+            }));   
+        });
+        
+        
+    });
 });
+
+var lineReader = require('readline').createInterface({
+    input: require('fs').createReadStream('python/login.config')
+});
+
+function postsPerWeek(userJSON) {
+    let now = Date.now() / 1000;
+    let aWeek = 1000 * 60 * 60 * 24 * 7;
+    let count = 0;
+    
+    for (item of userJSON.feed.items) {
+        if (now - item.taken_at * 1000 < aWeek) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+function averageLikes(user) {
+    return user.feed.items.map(i => i.like_count).reduce((acc, curr) => acc + curr) / user.feed.items.length;
+}
+
+lineReader.on('line', function (line) {
+    if (!igUsername) {
+        igUsername = line;
+        return;
+    }
+
+    if (!igPassword) {
+        igPassword = line;
+        return;
+    }
+  });
 
 app.listen(port, () => console.log(`Blaze started on port ${port}...`))
 
