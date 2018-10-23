@@ -51,14 +51,42 @@ app.post('/submit-data', (req, res) => {
     // send to database
     let query = `INSERT INTO users (username, score) VALUES ('${req.body.username}', ${instagramScore})`;
     console.log(query);
-    db.query(query, (err, rows, fields) => {
+    new Promise( (res, error) => db.query(query, (err, rows, fields) => {
         console.log("query returned");
         if (err) {
             console.log(err);
+        } else {
+            res();
         }
+    })).then( (res, error) => {
+        // add followers to database
+        let output = "";
+        let pythonProcess = spawn('python', [`python/get_followers_cached.py`, "-u", `"${igUsername}"`, "-p", `"${igPassword}"`, "-settings", `${__dirname}/python/credentials.json`, "-uu", `${ req.body.username }`]);
+        pythonProcess.stdout.on('data', (data) => {
+            output += data.toString();
+        });
+        pythonProcess.on('close', () => {
+            let followersJSON = JSON.parse(output);
+            let followers = followersJSON.users.map(u => u.username);
+            let query = `
+            INSERT INTO \`user-following\` (username, follows)
+            VALUES ${
+                followers.map(f => `('${ req.body.username }', '${ f }')`).join(',')
+            }
+            `;
+            console.log(query);
+            db.query(query, (err, rows, fields) => {
+                if (!err) {
+                    console.log("Successfully put followers into database");
+                    res();
+                } else {
+                    console.log(err);
+                }
+            })
+        });
     });
 
-    // add followers to database
+    
     
 });
 
@@ -173,8 +201,8 @@ function checkUsername(username) {
 }
 
 function getScore(array) {
-    array[2] = 6 - array[2];
-    array[3] = 6 - array[3];
+    array[0] = 6 - array[2];
+    array[1] = 6 - array[3];
 
     let sum = 0; 
     for (let i = 0; i < array.length; i++) {

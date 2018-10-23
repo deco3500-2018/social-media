@@ -95,7 +95,7 @@ function submitToServer() {
 	fetch('/submit-data', params)
 		.then((err) => {
 			console.log(err);
-			//window.location.href = INVISION_URL;
+			window.location.href = INVISION_URL;
 		});
 }
 

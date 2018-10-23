@@ -21,7 +21,4 @@ user_id = api.username_info(sys.argv[1])['user']['pk']
 follows = api.user_following(user_id, api.generate_uuid())
 
 # print follows
-for user in follows['users']:
-        print(user['username'])
-
-print(json.dumps(api.settings))
+print(json.dumps(follows))
