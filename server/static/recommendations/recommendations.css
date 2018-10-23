@@ -37,7 +37,7 @@ header img {
     flex-direction: column;
 }
 
-.follow-detail {
+#follow-detail {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
@@ -45,15 +45,16 @@ header img {
     width: 100vw;
     overflow-x: hidden;
     height: 100vh;
+    transition: opacity 0.25s;
 }
 
-.follow-detail .heading {
+#follow-detail .heading {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.follow-detail h1 {
+#follow-detail h1 {
     font-size: 48px;
     color: rgba(255, 255, 255, 0.8);
     font-family: 'Fredoka One', cursive;
@@ -61,15 +62,15 @@ header img {
     letter-spacing: 2px;
 }
 
-.follow-detail .post-count {
+#follow-detail .post-count {
     margin-top: 90px;
 }
 
-.follow-detail .dark {
+#follow-detail .dark {
     color: rgba(0, 0, 0, 0.7);
 }
 
-.follow-detail .large {
+#follow-detail .large {
     font-size: 280px;
     color: rgba(0, 0, 0, 0.75);
     line-height: 1;
