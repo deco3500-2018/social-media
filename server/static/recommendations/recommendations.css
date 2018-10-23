@@ -1,0 +1,146 @@
+body {
+    background-image: linear-gradient(to right, rgb(241, 98, 100), rgb(173, 54, 144));
+    padding-top: 170px;
+    display: flex;
+    justify-items: center;
+}
+
+header {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+header i {
+    font-size: 80px;
+    color: white;
+}
+
+header img {
+    height: 90px;
+    filter: brightness(8);
+}
+
+#following-list {
+    width: 100vw;
+    height: 30vh;
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.follow-detail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+    width: 100vw;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.follow-detail .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.follow-detail h1 {
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Fredoka One', cursive;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.follow-detail .post-count {
+    margin-top: 90px;
+}
+
+.follow-detail .dark {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.follow-detail .large {
+    font-size: 280px;
+    color: rgba(0, 0, 0, 0.75);
+    line-height: 1;
+}
+
+.gallery {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    transform: rotate(-3deg);
+}
+
+.gallery img {
+    max-width: 240px;
+    height: 240px;
+    border: 10px solid white;
+    
+}
+
+.follow {
+    width: 100vw;
+    height: 160px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.follow:hover {
+    background-color: rgba(0, 0, 0, 0.03)
+}
+
+.follow .names {
+    display: flex;
+    flex-direction: column;
+}
+
+.follow .names h4 {
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0px;
+}
+
+.follow .names h4:nth-child(2) {
+    font-size: 24px;
+}
+
+.follow img {
+    border-radius: 50%;
+    border: 7px solid #5a3191;
+    height: 100px;
+    margin-left: 10vw;
+    margin-right: 8vw;
+}
+
+.follow .decision {
+    margin-left: auto;
+    margin-right: 10vw;
+}
+
+.follow .decision i {
+    font-size: 65px;
+}
+
+.follow .decision i:first-child {
+    color: #f16264;
+    margin-right: 50px;
+}
+
+.follow .decision i:nth-child(2) {
+    color: #f36e43;
+}
+

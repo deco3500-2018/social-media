@@ -14,7 +14,7 @@ let db = mysql.createConnection({
 
 db.connect((err) => {
     if (err) console.log(err);
-    else console.log("Connected to database");
+    else console.log("Connected to database...");
 });
 
 const app = express();
@@ -57,7 +57,7 @@ app.post('/submit-data', (req, res) => {
     // add followers to database
 });
 
-//app.listen(port, () => console.log(`Blaze started on port ${port}...`))
+app.listen(port, () => console.log(`Blaze started on port ${port}...`))
 
 function checkUsername(username) {
     return true;
