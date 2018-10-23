@@ -132,8 +132,8 @@ app.get('/recommendations-data', (req, res) => {
     // query the database
     let query = `
         SELECT UF.follows as 'username', AVG(U.score) as 'score'
-        FROM `user-following` UF, `user-following` UF2, users U
-        WHERE UF.username = ${ req.query.username }
+        FROM \`user-following\` UF, \`user-following\` UF2, users U
+        WHERE UF.username = '${ req.query.username }'
         AND UF2.follows = UF.follows
         AND U.username = UF2.username
         GROUP BY UF.follows
@@ -141,18 +141,19 @@ app.get('/recommendations-data', (req, res) => {
     
     let users = new Array();
     db.query(query, (err, rows, fields) => {
-        console.log('query returned');
-        users = rows.map( row => {
-            {
-                username: row['username']
+        users = rows.map( row => 
+            ({
+                username: row['username'],
                 percentage: 100 - row['score'] / 5 * 100
-            }
-        });
+            })
+        );
     });
     
     res.send(JSON.stringify({
         "users": users
     }));
+
+    
 });
 
 app.listen(port, () => console.log(`Blaze started on port ${port}...`))
