@@ -17,6 +17,7 @@ function getData() {
 
 function updateFollowList(data) {
     let followingList = document.querySelector('#following-list');
+    followingList.innerHTML = "";
     
     for (user of data.users) {
         let followingElem = document.createElement('div');
@@ -29,15 +30,27 @@ function updateFollowList(data) {
                 <h4>${ user.username }</h4>
             </div>
             <div class="decision">
-                <i class="fas fa-check" onclick="tickClickHandler"></i>
-                <i class="fas fa-times" onclick="rejectClickHandler"></i>
+                <i class="fas fa-times" username="${ user.username }" onclick="rejectClickHandler"></i>
             </div>
         `;
         followingList.appendChild(followingElem);
         followingElem.addEventListener('click', event => {
+            let elem = event.target;
+            console.log(elem.tagName);
+            if (elem.tagName.toLowerCase() === 'i') {
+                rejectClickHandler(elem);
+                return;
+            }
+
+            let username = elem.getAttribute('username');
+            while (!username && elem.parentNode) {
+                elem = elem.parentNode;
+                username = elem.getAttribute('username');
+            }
+            console.log(username);
             document.querySelector("#follow-detail").style.opacity = '0';
             setTimeout(() => {
-                populateFollowDetail(event.target.getAttribute('username'));
+                populateFollowDetail(username);
                 document.querySelector("#follow-detail").style.opacity = '1';
             }, 250);
         }, false);
@@ -47,15 +60,37 @@ function updateFollowList(data) {
     populateFollowDetail(data.users[0].username);
 }
 
-function tickClickHandler(followingElm) {
-    alert('Add');
+function rejectClickHandler(followingElem) {
+    console.log("a");
+    let overlay = document.querySelector('#overlay');
+    overlay.style.display = 'flex';
+    overlay.innerHTML = `
+        Would you like to unfollow ${followingElem.getAttribute('username')}?
+        <div>
+            <input type="button" id="closeButton" value="Cancel"></button>
+            <input type="button" username=${followingElem.getAttribute('username')} id="deleteAccount" value="Confirm"></button>
+        </div>
+
+    `;
+
+    document.querySelector('#closeButton').addEventListener('click', closeOverlay, false);
+    document.querySelector('#deleteAccount').addEventListener('click', deleteAccount, false);
 }
 
-function rejectClickHanlder(followingElm) {
-    alert('Remove');
-    // remove from dom
+function closeOverlay(event) {
+    console.log(close);
+    document.querySelector('#overlay').style.display = 'none';
+}
 
-    // remove from data
+function deleteAccount(event) {
+    let username = event.target.getAttribute('username');
+    let data = getRecommendations();
+    data = {
+        users: data.users.filter(u => u.username != username)
+    }
+    localStorage.setItem('recommendations', JSON.stringify(data));
+    updateFollowList(data);
+    closeOverlay();
 }
 
 function populateFollowDetail(username) {
@@ -69,11 +104,11 @@ function populateFollowDetail(username) {
     followDetail.innerHTML = `
         <div class="heading">
             <h1>${ user.name.split(" ")[0] }'s followers are</h1>
-            <h1 class="large">${ user.percentage }%</h1>
-            <h1>more likely to be sadder.</h1>
+            <h1 class="large">${ Math.round(user.percentage) }%</h1>
+            <h1>more likely to be sad.</h1>
         </div>
 
-        <h1 class="post-count"><span class="dark">${ user.postsPerWeek }</span> posts per week</h1>
+        <h1 class="post-count"><span class="dark">${ Math.round(user.postsPerWeek) }</span> posts per week</h1>
 
         <h1><span class="dark">${ Math.round(user.averageLikes) }</span> likes on average</h1>
 

@@ -1,6 +1,6 @@
 window.onload = init;
 
-let INVISION_URL = "/";
+let INVISION_URL = "https://projects.invisionapp.com/share/C6OMGSSHXWJ#/screens/326040247";
 
 let questions = [
     "When I read news feeds or see others' photos on Instagram, I think that others are having a better life than me.",

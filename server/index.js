@@ -4,6 +4,38 @@ const config = require('./config');
 const mysql = require('mysql');
 const spawn = require("child_process").spawn;
 
+const top500 = require('./top500');
+const words = require('./greatWords');
+
+
+// query = `
+//     INSERT INTO \`user-following\` (username, follows) VALUES
+//     ${
+//         words.map( w => {
+//             let randomList = [];
+//             for (let i = 0; i < 200; i++) {
+//                 let account = top500[Math.round(Math.random() * 500)];
+//                 while (randomList.includes(account)) {
+//                     account = top500[Math.round(Math.random() * 500)];
+//                 }
+//                 randomList.push(account);
+//             }
+//             return randomList.map(r => `('${w.toLowerCase()}', '${r}')`).join(',');
+//         }).join(',')
+//     }
+// `;
+
+// console.log(query);
+
+
+
+
+
+
+
+
+
+
 let igUsername;
 let igPassword;
 
@@ -29,65 +61,79 @@ app.use( bodyParser.json() );
 
 app.post('/submit-data', (req, res) => {
     console.log(req.body);
-    
-    // validate username
+
     if (!checkUsername(req.body.username)) {
         console.log('Username error');
         res.send("Username error.");
         return;
     }
 
-    // validate question results
-    let instagramScore = getScore(JSON.parse(req.body.results));
-    if (isNaN(instagramScore) || instagramScore <  1 || instagramScore > 5) {
-        console.log('Result error');
-        console.log(instagramScore);
-        res.send("Result error.");
-        return;
-    }
-    
-    res.send('Success.');
-    
-    // send to database
-    let query = `INSERT INTO users (username, score) VALUES ('${req.body.username}', ${instagramScore})`;
-    console.log(query);
-    new Promise( (res, error) => db.query(query, (err, rows, fields) => {
-        console.log("query returned");
-        if (err) {
-            console.log(err);
-        } else {
-            res();
+    let output = "";
+    let pythonProcess = spawn('python', [`python/get_user_cached.py`, "-u", `"${igUsername}"`, "-p", `"${igPassword}"`, "-settings", `${__dirname}/python/credentials.json`, "-uu", `${req.body.username}`]);
+    pythonProcess.stdout.on('data', (data) => {
+        console.log("receiving");
+        output += data.toString();
+    });
+    pythonProcess.stderr.on('data', (data) => {
+        console.log(data.toString());
+    });
+    pythonProcess.on('close', () => {
+        // validate user
+        let userJSON = JSON.parse(output);
+
+        if (!userJSON.username || userJSON.is_private === true) {
+            console.log(userJSON);
+            return;
         }
-    })).then( (res, error) => {
-        // add followers to database
-        let output = "";
-        let pythonProcess = spawn('python', [`python/get_followers_cached.py`, "-u", `"${igUsername}"`, "-p", `"${igPassword}"`, "-settings", `${__dirname}/python/credentials.json`, "-uu", `${ req.body.username }`]);
-        pythonProcess.stdout.on('data', (data) => {
-            output += data.toString();
-        });
-        pythonProcess.on('close', () => {
-            let followersJSON = JSON.parse(output);
-            let followers = followersJSON.users.map(u => u.username);
-            let query = `
-            INSERT INTO \`user-following\` (username, follows)
-            VALUES ${
-                followers.map(f => `('${ req.body.username }', '${ f }')`).join(',')
+        
+        // validate question results
+        let instagramScore = getScore(JSON.parse(req.body.results));
+        if (isNaN(instagramScore) || instagramScore <  1 || instagramScore > 5) {
+            console.log('Result error');
+            console.log(instagramScore);
+            res.send("Result error.");
+            return;
+        }
+        
+        res.send('Success.');
+        
+        // send to database
+        let query = `INSERT INTO users (username, score) VALUES ('${req.body.username}', ${instagramScore})`;
+        console.log(query);
+        new Promise( (res, error) => db.query(query, (err, rows, fields) => {
+            console.log("query returned");
+            if (err) {
+                console.log(err);
+            } else {
+                res();
             }
-            `;
-            console.log(query);
-            db.query(query, (err, rows, fields) => {
-                if (!err) {
-                    console.log("Successfully put followers into database");
-                    res();
-                } else {
-                    console.log(err);
+        })).then( (res, error) => {
+            // add followers to database
+            let output = "";
+            let pythonProcess = spawn('python', [`python/get_followers_cached.py`, "-u", `"${igUsername}"`, "-p", `"${igPassword}"`, "-settings", `${__dirname}/python/credentials.json`, "-uu", `${ req.body.username }`]);
+            pythonProcess.stdout.on('data', (data) => {
+                output += data.toString();
+            });
+            pythonProcess.on('close', () => {
+                let followersJSON = JSON.parse(output);
+                let followers = followersJSON.users.map(u => u.username);
+                let query = `
+                INSERT INTO \`user-following\` (username, follows)
+                VALUES ${
+                    followers.map(f => `('${ req.body.username }', '${ f }')`).join(',')
                 }
-            })
+                `;
+                console.log(query);
+                db.query(query, (err, rows, fields) => {
+                    if (!err) {
+                        console.log("Successfully put followers into database");
+                    } else {
+                        console.log(err);
+                    }
+                })
+            });
         });
     });
-
-    
-    
 });
 
 app.get('/recommendations-data', (req, res) => {
@@ -121,7 +167,10 @@ app.get('/recommendations-data', (req, res) => {
         }
         console.log(`Instagram | U: ${igUsername} P: ${igPassword}`);
 
-        users.pop;
+        users = users.sort((u1, u2) => {
+            return u2.percentage - u1.percentage;
+        }).slice(0, 10);
+
     
         // query python ig scraper
         Promise.all( users.map( user => {
@@ -130,6 +179,9 @@ app.get('/recommendations-data', (req, res) => {
                 let pythonProcess = spawn('python', [`python/get_user_cached.py`, "-u", `"${igUsername}"`, "-p", `"${igPassword}"`, "-settings", `${__dirname}/python/credentials.json`, "-uu", `${user.username}`]);
                 pythonProcess.stdout.on('data', (data) => {
                     output += data.toString();
+                });
+                pythonProcess.stderr.on('data', (data) => {
+                    console.log(data.toString());
                 });
                 pythonProcess.on('close', () => {
                     let userJSON = JSON.parse(output);
