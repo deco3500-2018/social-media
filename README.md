@@ -1,4 +1,4 @@
-# social-media
+# Project: Blaze
 Project Repository for Social Media &amp; Health group
 
 Team Name: Anti-Social
