@@ -5,12 +5,11 @@ Team Name: Anti-Social
 
 # 1.0 Promotional Materials
 
-
-        social-media/images/final-poster.jpg
+![final-poster](https://github.com/deco3500-2018/social-media/blob/master/images/final-poster.jpg)
       
 
 # 2.0 Prototypes
-Paper Prototype - images are uploaded (social-media/images)
+Paper Prototype - images are uploaded (social-media/images) (link)
 Invsionapp prototype - https://projects.invisionapp.com/share/6KOC0DHF3Y4#/screens 
 
 # 3.0 Project Summary 
