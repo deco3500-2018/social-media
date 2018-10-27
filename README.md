@@ -8,7 +8,11 @@ Team Name: Anti-Social
 
 ![final-poster](https://github.com/deco3500-2018/social-media/blob/master/images/final-poster.jpg)
 
-*insert flyer images here
+![Brochure](https://github.com/deco3500-2018/social-media/blob/master/images/Brochure-1.jpg)
+
+![Brochure](https://github.com/deco3500-2018/social-media/blob/master/images/Brochure-2.jpg)
+
+
       
 
 # 2.0 Prototypes
