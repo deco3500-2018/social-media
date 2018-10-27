@@ -4,8 +4,11 @@ Project Repository for Social Media &amp; Health group
 Team Name: Anti-Social
 
 # 1.0 Promotional Materials
+## Exhibition Poster
 
 ![final-poster](https://github.com/deco3500-2018/social-media/blob/master/images/final-poster.jpg)
+
+*insert flyer images here
       
 
 # 2.0 Prototypes
@@ -40,12 +43,74 @@ Overall, social networks may be looked at as a double-edged sword for teens and 
 
 
 ### Existing solutions and critique
+## Existing Solutions & Critique
+### Articles
+The main existing solutions towards the negative effects of well-being by social media are in education and campaigns which spread awareness. 
 
-RSPH Awareness Campaigns - .....
+In attempting to find existing solutions, many articles were found on popular websites detailing how and why users should detach their lives from social media. Some of these are linked below:
 
-DistractaGone - .....
+* [5 Reasons Why You Should Start Deleting Facebook Friends | MakeUseOf](https://www.makeuseof.com/tag/5-reasons-start-deleting-facebook-friends/)
+* [Can Deleting Facebook Friends Improve Your Life? | Psychology Today](https://www.psychologytoday.com/au/blog/millennial-media/201108/can-deleting-facebook-friends-improve-your-life)
+* [Unfollowing all my Facebook friends | Damián Le Nouaille, Medium](https://medium.com/@damln/unfollowing-all-my-facebook-friends-part-1-730ae3bc2de3)
+* [Smartphones are driving us to distraction. Here’s help. | ComputerWorld](https://www.computerworld.com/article/3233286/smartphones/smartphones-are-driving-us-to-distraction-here-s-help.html)
 
-conclude
+Here, the third article detailing how readers should unfollow all of their Facebook friends along with groups, organizations and public figures appeared to be the most interesting. The end goal to the method provided was to completely clear the Facebook feed, and while this was thought to be drastic, its advantage would be that users would still be connected will all of their Facebook friends. Unfriending may be seen by others as hostile, and unfollowing achieves the same result, without the negative impact on how others see the user.
+
+The main problem with each of these educational articles, however, is that while readers may understand why they should reduce their footprint on social media after reading them, they don't enforce readers to take action or change the habits that they already have.
+
+### RSPH Awareness Campaigns
+![#StatusOfMind Report Cover](https://www.rsph.org.uk/uploads/assets/derivatives/featuredpanelimage_852bc4924d42a7dc79b182d4b566e15c/f031018f-3134-4da1-91b802d2889fa67d.jpg)
+
+The Royal Society for Public Health (RSPH) from the UK has a social media campaign for raising awareness about social media called #StatusOfMind, which is backed by a report and many articles detailing their discovered adverse effects of social media. More recently, they have also been running a ScrollFreeSeptember campaign, which encourages youth to turn off social media over the month of September.
+
+The impact of these campaigns is difficult to judge. As they have been centred around the UK, the level of awareness reached by these campaigns isn't apparent in Australia. One identified advantage of the RSPH initiatives, however, is that the ScrollFreeSeptember campaign encourages viewers to take action over a full month. Those that participate would then be able to see the advantages of stopping social media use, potentially adjust their habits afterwards. Another advantage is that the #StatusOfMind campaign emphasizes that some social networks have more positive impacts than others. YouTube is promoted as the healthiest social network to use while Instagram is promoted as being the worst.
+
+The disadvantage here is that again, drastic measures are taken. By asking participants to stop the use of social media, ScrollFreeSeptember takes away from participants both the positive and negative effects afforded by social media. Similarly, in encouraging users to spend more time on Youtube than Instagram in the #StatusOfMind campaign, the RSPH have missed that those two platforms help users in different ways. "Social networking" on YouTube is one largely one-sided, and almost all users spend much more time consuming that contributing content.
+
+### DistractaGone
+
+![DistractaGone smartphone locker](https://ph-files.imgix.net/99cacdbb-920c-4427-9db2-72158e21362d?auto=format&auto=compress&codec=mozjpeg&cs=strip)
+
+In products (either software or physical) addressing the problem space, very little was found. The only solution found was DistractaGone, a box which can lock smartphones for a set amount of time. This solution not only stops users from accessing social media but all other features which are available on their smartphones. It is believed that while the district has gone can eliminate smartphone distractions over short periods of time, it isn't a long-term solution to overuse of social media. Where its users don't feel that their full attention is required somewhere else, they may fall back to old habits and continue their regular use of social media and experience that same changes in well-being that usually result.
+
+### Our Designs
+
+The existing solutions found all take an all or nothing approach to social media. Users are encouraged to delete a large number of friends, unfollow everyone, stop social media usage entirely, or physically restrict themselves from using their phones. What should be recognised is that by doing this, users would close themselves off from the legitimate benefits which social networks can bring. It is likely for this reason that the methods found are not in widespread use. As stated in the section below, the prototypes developed in this project will aim to be softer in still allowing social media, but optimising it for maximum benefit.
+
+## Design Opportunity / Concepts
+
+The design opportunity of this project is to enhance the quality of time on social media for young adults by encouraging activities which provide a boost in well-being while discouraging activities which are known to be negative. More specifically, we want to encourage aspects of social media such as direct communication with peers, building close friendships, expression of self and discovery of real-life events while discouraging comparison of self with others and concerns about self-image.
+
+As no existing solutions to the problem space were found which used technology to warn and persuade users, this will be an interesting design opportunity to explore. The final presented solution may come in the form of a mobile application, web application or tangible computing device and may use persuasive computing ideas to change behaviour.
+
+Some initial concepts that we want to explore are outlined below:
+
+#### Unfriend
+
+This is a mobile application which intends to sit on users smartphones alongside Facebook, Instagram and Snapchat. The idea will be to monitor a user's interaction with others on each social network and determine the 'friends' a user has which they haven't interacted with for a while. This could be done through monitoring of the smartphone, or by taking data from the APIs of each social media platform. If a friend hasn't been interacting with the user for a long time, the user will be alerted (e.g. notification). After some elapsed period, the user will be alerted again. If there continues to be no interaction between the two people, the application will unfriend or unfollow that person.
+
+By providing users with alerts, the application encourages interaction between friends who haven't communicated in a long time. As friends which don't communicate at all will automatically be removed from the user's social networks, users of the application will tend to follow fewer people, and only receive updates on their feed about people that they know well.
+
+#### Social media health orb
+
+This is a tangible computing solution which is a colour changing orb that may sit somewhere in a user's home or be taken around with them. The orb should show either positive (green, blue, yellow) or negative (red, orange, black) colours based on the monitored social media habits of the user. The orb aims to subtly remind users whether they are spending too much time browsing through others' profiles and whether they may be spending too little time directly communicating with others. A web application may also accompany the orb, which can provide a more detailed breakdown of how the user can adjust their behaviour to maximise well-being.
+
+#### Social networking score
+
+An idea similar to the orb is a social media "score", which aggregates factors such as time spent scrolling feeds, types of the content looked at, the frequency of direct conversations and intimacy of conversations to summarise whether a user's behaviours may be contributing positively or negatively to their well-being. This qualifies the process of changing habits on social media towards more healthy ones and rewards users for it. This score could be presented in a variety of forms, including a mobile app, web application, or a tangible 'scoreboard' which the user might take with them. The score is not shown to others as the comparison is not the goal.
+
+#### Warning before people follow
+
+One way to help prevent social networking users from polluting their feeds with posts that make them feel jealous or annoyed would be to help them make decisions on whether they should follow a person or not. This could be done by creating a tool which analyses how often a person posts and the general content of those posts. The user can then be provided with some rating. This tool could also be used on people that the user is already following to help them optimise their Facebook or Instagram feed.
+
+#### Stay in touch
+
+Another way to encourage strong direct contact between people on social media networks is to provide a service which lets users promise each other to 'stay in touch'. While this is a commonly used phrase which is most of the time well-intentioned, people often forget to stay in contact after months or years and lose close contact. In order to use the service, both sides would need to agree to keep the promise. After a random time of no communication (months or years), the service would alert both users of the promise they had made earlier. Both users should be made aware that the opposite side has been alerted. Over time, the objective of this service is to have social network users staying in touch with more and more friends. This direct communication could then become a healthier and more engaging alternative to browsing social media. This service could be a web application, a tangible device or integrated into messaging services already in use.
+
+#### Response reminder
+
+A further idea which stemmed from 'Stay in touch' is a simple reminder service which can remind users to respond to messages which they may have been too busy to respond to earlier. This can help further conversation and communication, but keep users more engaged with what their friends are saying.
+
 
 ### interviews/surveys
 
