@@ -43,8 +43,10 @@ Overall, social networks may be looked at as a double-edged sword for teens and 
 
 
 ### Existing solutions and critique
-## Existing Solutions & Critique
-### Articles
+
+Existing Solutions & Critique
+
+#### Articles
 The main existing solutions towards the negative effects of well-being by social media are in education and campaigns which spread awareness. 
 
 In attempting to find existing solutions, many articles were found on popular websites detailing how and why users should detach their lives from social media. Some of these are linked below:
@@ -58,7 +60,7 @@ Here, the third article detailing how readers should unfollow all of their Faceb
 
 The main problem with each of these educational articles, however, is that while readers may understand why they should reduce their footprint on social media after reading them, they don't enforce readers to take action or change the habits that they already have.
 
-### RSPH Awareness Campaigns
+#### RSPH Awareness Campaigns
 ![#StatusOfMind Report Cover](https://www.rsph.org.uk/uploads/assets/derivatives/featuredpanelimage_852bc4924d42a7dc79b182d4b566e15c/f031018f-3134-4da1-91b802d2889fa67d.jpg)
 
 The Royal Society for Public Health (RSPH) from the UK has a social media campaign for raising awareness about social media called #StatusOfMind, which is backed by a report and many articles detailing their discovered adverse effects of social media. More recently, they have also been running a ScrollFreeSeptember campaign, which encourages youth to turn off social media over the month of September.
@@ -67,7 +69,7 @@ The impact of these campaigns is difficult to judge. As they have been centred a
 
 The disadvantage here is that again, drastic measures are taken. By asking participants to stop the use of social media, ScrollFreeSeptember takes away from participants both the positive and negative effects afforded by social media. Similarly, in encouraging users to spend more time on Youtube than Instagram in the #StatusOfMind campaign, the RSPH have missed that those two platforms help users in different ways. "Social networking" on YouTube is one largely one-sided, and almost all users spend much more time consuming that contributing content.
 
-### DistractaGone
+#### DistractaGone
 
 ![DistractaGone smartphone locker](https://ph-files.imgix.net/99cacdbb-920c-4427-9db2-72158e21362d?auto=format&auto=compress&codec=mozjpeg&cs=strip)
 
@@ -116,24 +118,38 @@ A further idea which stemmed from 'Stay in touch' is a simple reminder service w
 
 Our team started with drafting interview questions and surveys to gather an unbiased approach to decision-making for our prototype. We aim to collect unbiased survey data and develop sensible decisions based on analyzed results. 
 
-- interviews' results shown and conclude findings
+*****interviews' results shown and conclude findings
 
 ### our design and wireframe
 
 Our team moved on with coming up with some low fidelity prototype using Microsoft Word.  
 
+******insert images
+
 # phase2
+
 #### Requirement Gathering
 
 
 ### user testing (paper prototype)
-- need some 'sketches' and wireframes to show the process
+with the paper prototype, our team went on to conduct user testing and gather more feedback. simultaneously, we are working on developing the pages on invisionapp with colour and workflow for the prototype.
+
+the plan is to gather feedback from the paper prototype and apply changes to the medium fidelity prototype on invsionapp. 
 
 ### invisionapp development
 
-- getting feedback from the user testing on the paper prototype user testing
+the feedback we gathered from the paper prototype are ...... (refer to the paper prototype interview)
+
+#### Changes 
+
+based on the feedback, we made the necessary changes to the interface to make the app more intuitive and easy to navigate around. 
+
+changes can be seem below:
+
+
 
 ## Phase 3
+
 ### user testing on invisionapp 
 
 we did user testing using the invisionapp and gathered some feedback.
