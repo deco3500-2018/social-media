@@ -6,7 +6,7 @@ Team Name: Anti-Social
 # 1.0 Promotional Materials
 
 
-        social-media/images/final-poster.jpg
+social-media/images/final-poster.jpg
       
 
 # 2.0 Prototypes
