@@ -4,11 +4,11 @@ Project Repository for Social Media &amp; Health group
 Team Name: Anti-Social
 
 ## 1.0 Promotional Materials
-### Exhibition Poster
+### 1.1 Exhibition Poster
 
 ![final-poster](https://github.com/deco3500-2018/social-media/blob/master/images/final-poster.jpg)
 
-### Exhibition Brochure 
+### 1.2 Exhibition Brochure 
 
 ![Brochure](https://github.com/deco3500-2018/social-media/blob/master/images/Brochure-1.jpg)
 
