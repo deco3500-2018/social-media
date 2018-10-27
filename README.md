@@ -5,6 +5,10 @@ Team Name: Anti-Social
 
 # 1.0 Promotional Materials
 
+
+        social-media/images/final-poster.jpg
+      
+
 # 2.0 Prototypes
 Paper Prototype - images are uploaded (social-media/images)
 Invsionapp prototype - https://projects.invisionapp.com/share/6KOC0DHF3Y4#/screens 
