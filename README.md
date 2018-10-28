@@ -70,58 +70,43 @@ The main problem with these educational articles is that while readers may under
 
 The Royal Society for Public Health (RSPH) from the UK has a social media campaign for raising awareness about social media called #StatusOfMind, which is backed by a report and several articles detailing their discovered adverse effects of social media. More recently, they have also been running a ScrollFreeSeptember campaign, which encourages youth to turn off social media over the month of September.
 
-The impact of these campaigns is difficult to judge. As they have been centred around the UK, the level of awareness reached by these campaigns isn't apparent in Australia. One identified advantage of the RSPH initiatives, however, is that the ScrollFreeSeptember campaign encourages viewers to take action over a full month. Those that participate would then be able to see the advantages of stopping social media use, potentially adjust their habits afterwards. Another advantage is that the #StatusOfMind campaign emphasizes that some social networks have more positive impacts than others. YouTube is promoted as the healthiest social network to use while Instagram is promoted as being the worst.
+While the campaigns appear to be efficacious, their impact is difficult to assess as they were centred in the UK, hence the level of awareness reached by these campaigns is not apparent in Australia. However, one identified advantage of the RSPH initiatives is that the ScrollFreeSeptember campaign encourages viewers to enforce such behaviour over the course of an entire month. Hence, participants would be able to experience the benefits of eliminating social media from their lives, potentially adjusting their habits thereafter. Another advantage is that the #StatusOfMind campaign emphasised that certain social networks have more positive impacts than others. YouTube was acclaimed as the healthiest social network while Instagram was touted as the worst.
 
-The disadvantage here is that again, drastic measures are taken. By asking participants to stop the use of social media, ScrollFreeSeptember takes away from participants both the positive and negative effects afforded by social media. Similarly, in encouraging users to spend more time on Youtube than Instagram in the #StatusOfMind campaign, the RSPH have missed that those two platforms help users in different ways. "Social networking" on YouTube is one largely one-sided, and almost all users spend much more time consuming that contributing content.
+It is important to note that the key disadvantage of such campaigns is the adoption of drastic measures. By asking participants to halt their usage of social media, ScrollFreeSeptember removes both the positive and negative effects of social media. Similarly, in encouraging users to spend more time on YouTube than Instagram in the #StatusOfMind campaign, the RSPH has missed that those two platforms help users in different ways. "Social networking" on YouTube is one largely one-sided, and almost all users spend significantly more time consuming than contributing content.
+
 
 ##### DistractaGone
 
 ![DistractaGone smartphone locker](https://ph-files.imgix.net/99cacdbb-920c-4427-9db2-72158e21362d?auto=format&auto=compress&codec=mozjpeg&cs=strip)
 
-In products (either software or physical) addressing the problem space, very little was found. The only solution found was DistractaGone, a box which can lock smartphones for a set amount of time. This solution not only stops users from accessing social media but all other features which are available on their smartphones. It is believed that while the district has gone can eliminate smartphone distractions over short periods of time, it isn't a long-term solution to overuse of social media. Where its users don't feel that their full attention is required somewhere else, they may fall back to old habits and continue their regular use of social media and experience that same changes in well-being that usually result.
+In our search for products (either software or physical) which addressed the problem space, very little was found. The sole solution found was DistractaGone, a box which can lock smartphones for a specified period of time. This solution not only stops users from accessing social media, but all other features available on their smartphones. It is believed that while DistractaGone may eliminate smartphone distractions over short periods of time, it is not a long-term solution for the excessive usage of social media. When users do not think that their full attention is required elsewhere, they may fall back to their old habits and continue using social media regularly, thereby experiencing the same changes in well-being that usually result from that. 
 
 #### Our Designs
 
-The existing solutions found all take an all or nothing approach to social media. Users are encouraged to delete a large number of friends, unfollow everyone, stop social media usage entirely, or physically restrict themselves from using their phones. What should be recognised is that by doing this, users would close themselves off from the legitimate benefits which social networks can bring. It is likely for this reason that the methods found are not in widespread use. As stated in the section below, the prototypes developed in this project will aim to be softer in still allowing social media, but optimising it for maximum benefit.
+The existing solutions found all take an all-or-nothing approach to social media. Users are encouraged to delete a large number of friends, unfollow everyone, stop social media usage entirely, or physically restrict themselves from using their phones. What should be recognised is that by doing this, users would close themselves off from the legitimate benefits which social networks may bring. This could be the reason that the methods stated above have not gained popularity. As stated in the section below, the prototypes developed in this project will aim to be flexible in permitting the usage of social media, while optimising it to achieve the maximum benefits possible.
 
 ### Design Opportunity / Concepts
 
 The design opportunity of this project is to enhance the quality of time on social media for young adults by encouraging activities which provide a boost in well-being while discouraging activities which are known to be negative. More specifically, we want to encourage aspects of social media such as direct communication with peers, building close friendships, expression of self and discovery of real-life events while discouraging comparison of self with others and concerns about self-image.
 
-As no existing solutions to the problem space were found which used technology to warn and persuade users, this will be an interesting design opportunity to explore. The final presented solution may come in the form of a mobile application, web application or tangible computing device and may use persuasive computing ideas to change behaviour.
+As there are no existing solutions to the problem space which uses technology to shape users’ behaviour, this would be an interesting design opportunity to explore. The final presented solution may come in the form of a mobile application, web application or tangible computing device and may use persuasive computing ideas to change behaviour.
 
-Some initial concepts that we want to explore are outlined below:
+Some initial concepts that we intend to explore can be found in the link below (wiki)
 
-##### Unfriend
+*** Link to wiki
 
-This is a mobile application which intends to sit on users smartphones alongside Facebook, Instagram and Snapchat. The idea will be to monitor a user's interaction with others on each social network and determine the 'friends' a user has which they haven't interacted with for a while. This could be done through monitoring of the smartphone, or by taking data from the APIs of each social media platform. If a friend hasn't been interacting with the user for a long time, the user will be alerted (e.g. notification). After some elapsed period, the user will be alerted again. If there continues to be no interaction between the two people, the application will unfriend or unfollow that person.
 
-By providing users with alerts, the application encourages interaction between friends who haven't communicated in a long time. As friends which don't communicate at all will automatically be removed from the user's social networks, users of the application will tend to follow fewer people, and only receive updates on their feed about people that they know well.
-
-##### Social media health orb
-
-This is a tangible computing solution which is a colour changing orb that may sit somewhere in a user's home or be taken around with them. The orb should show either positive (green, blue, yellow) or negative (red, orange, black) colours based on the monitored social media habits of the user. The orb aims to subtly remind users whether they are spending too much time browsing through others' profiles and whether they may be spending too little time directly communicating with others. A web application may also accompany the orb, which can provide a more detailed breakdown of how the user can adjust their behaviour to maximise well-being.
-
-##### Social networking score
-
-An idea similar to the orb is a social media "score", which aggregates factors such as time spent scrolling feeds, types of the content looked at, the frequency of direct conversations and intimacy of conversations to summarise whether a user's behaviours may be contributing positively or negatively to their well-being. This qualifies the process of changing habits on social media towards more healthy ones and rewards users for it. This score could be presented in a variety of forms, including a mobile app, web application, or a tangible 'scoreboard' which the user might take with them. The score is not shown to others as the comparison is not the goal.
-
-##### Warning before people follow
-
-One way to help prevent social networking users from polluting their feeds with posts that make them feel jealous or annoyed would be to help them make decisions on whether they should follow a person or not. This could be done by creating a tool which analyses how often a person posts and the general content of those posts. The user can then be provided with some rating. This tool could also be used on people that the user is already following to help them optimise their Facebook or Instagram feed.
-
-##### Stay in touch
-
-Another way to encourage strong direct contact between people on social media networks is to provide a service which lets users promise each other to 'stay in touch'. While this is a commonly used phrase which is most of the time well-intentioned, people often forget to stay in contact after months or years and lose close contact. In order to use the service, both sides would need to agree to keep the promise. After a random time of no communication (months or years), the service would alert both users of the promise they had made earlier. Both users should be made aware that the opposite side has been alerted. Over time, the objective of this service is to have social network users staying in touch with more and more friends. This direct communication could then become a healthier and more engaging alternative to browsing social media. This service could be a web application, a tangible device or integrated into messaging services already in use.
-
-##### Response reminder
-
-A further idea which stemmed from 'Stay in touch' is a simple reminder service which can remind users to respond to messages which they may have been too busy to respond to earlier. This can help further conversation and communication, but keep users more engaged with what their friends are saying.
 
 
 #### interviews/surveys
 
-Our team started with drafting interview questions and surveys to gather an unbiased approach to decision-making for our prototype. We aim to collect unbiased survey data and develop sensible decisions based on analyzed results. 
+Our team conducted interviews and surveys to facilitate decision-making with regard to our prototype. We sought to collect unbiased data and make sensible decisions based on the evaluation of results. 
+
+The top three solutions favoured by respondents were “Stay in Touch”, “Response Reminder” and “Social Networking Score”. Overall, the results showed that the respondents were more receptive to solutions that provided flexibility in the usage of social media and did not enforce any extreme measures (e.g. unfriending or unfollowing friends). It was apparent that respondents greatly valued their freedom of choice and hence, would prefer friendly reminders on their social media usage pattern or interaction with their friends over imposed actions carried out by technology based on hard-coded rules. 
+
+Another notable observation was the important role that perception played in our respondents’ answers. If the proposed solution involved actions that could result in a negative or undesirable view of the respondent, he/she would be unlikely to adopt it, even if the benefits were scientifically proven or significantly stronger than other methods. This showed that while people were aware of the negative effects of social media and sought to mitigate them, they would not do it at the expense of their image or reputation, as that would result in far more disastrous consequences in their eyes. 
+
+To sum it up, our two key takeaways from the survey were that people valued options and their reputation above everything else. Hence, our proposed solution has to incorporate those points to be effective. 
 
 *****interviews' results shown and conclude findings
 
@@ -137,9 +122,11 @@ Our team moved on with coming up with some low fidelity prototype using Microsof
 
 
 #### user testing (paper prototype)
-with the paper prototype, our team went on to conduct user testing and gather more feedback. simultaneously, we are working on developing the pages on invisionapp with colour and workflow for the prototype.
 
-the plan is to gather feedback from the paper prototype and apply changes to the medium fidelity prototype on invsionapp. 
+Using the paper prototype, our team proceeded to conduct user testing and gather additional feedback. We also worked concurrently to develop the pages on invisionapp, incorporating colours and designing a workflow for the prototype.
+
+The plan was to obtain feedback from the paper prototype and incorporate changes to the medium-fidelity prototype on invsionapp. 
+
 
 #### invisionapp development
 
@@ -147,34 +134,28 @@ the feedback we gathered from the paper prototype are ...... (refer to the paper
 
 ##### Changes 
 
-based on the feedback, we made the necessary changes to the interface to make the app more intuitive and easy to navigate around. 
-
+Based on the feedback received, we made the necessary changes to the interface to make the app more intuitive and easy to navigate. 
 changes can be seem below:
 
-
+The key changes were as follows:
 
 ### Phase 3
 
 #### user testing on invisionapp 
 
-we did user testing using the invisionapp and gathered some feedback.
 
-the main (actionable) feedback were that:
-- colour on the pages were too bright, consider following the layout on instagram and fb with white background colour. 
-- the homepage tabs looks kinda confusing, consider rewording them or combine some of them together. such as least active friends can combine with friend list tab and healthy social habits tab can combine with unhealthy social habits tab.
-- rating page was redundant? considering removing it or only ask once when the user logs in for the first time?
-- keep background colour simple
-- purpose of least active friends page is unclear
-- rating opage is for?
+We conducted user testing using invisionapp and gathered the following feedback:
+- The colour on the pages was too bright. Consider following the layout on Instagram and Facebook which used white as their background colour. 
+- The homepage tabs appeared confusing. Consider rewording them or combining some of them together. For instance, least active friends could be combined with the friend list tab while healthy social habits tab could be combined with unhealthy social habits tab.
+- The rating page was redundant. Consider removing it or only asking upon the user’s first login to the site. 
+- The purpose of the least active friends page was unclear.
 
-conclusion
-layout is intuitive, workflow is there and easy to navigate around due to the text and images. some minor touch up to be made to make it better. 
+In conclusion, we found that the overall layout was intuitive and the site was relatively easy to navigate due to the straightforward workflow. Having said that, some minor amendments would simplify the site’s content and design, thereby enhancing the overall user experience.
+
 
 #### final touch up
+We made changes to the colour scheme and wording of the homepage to create 'familiarity' for the users. This was in response to their comments that similarities to Facebook and Instagram would serve to enhance their overall ease of usage. The number of tabs was also reduced to prevent the site from looking cluttered and overwhelming users with information. Ultimately, this would help to draw users’ attention to key content and direct their focus accordingly. 
 
-we made changes to the colour on the homepage and also changed the words used to create 'familiarity' for the users as they mentioned that it's currently intuitive due to the fact that it looked similar to facebook and instagram.
-
-- design challenges and findings (tried marvel app but changed to invisionapp, challenges faced using marvel app were?)
 #### end product
 
 
