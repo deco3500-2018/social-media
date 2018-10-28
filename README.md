@@ -36,40 +36,39 @@ We also strived to develop a working and presentable prototype which presents a 
 
 From the initial research conducted, we found the use of social networks such as Facebook, Instagram and Snapchat can lead to reductions in well-being related to lowered self-confidence and life satisfaction, feelings of exclusion, anxiety, lowered self-awareness, depression and loneliness. It is commonly understood that these effects arise from users comparing themselves with others, leading to social media platforms becoming a 'competition' for beauty and self-image.
 
-We also found out that social network users tend to be more well connected, greater social connectedness also doesn't necessarily translate into meaningful and authentic friendships in reality. Social network use has also been shown to reduce numbers and lower quality of face-to-face interactions overall.
+We also discovered that while social network users tend to be more well connected, greater social connectedness does not necessarily translate into meaningful and authentic friendships in reality. Social network use has also been shown to reduce the numbers and  quality of face-to-face interactions overall.
 
-On the other hand, prior research conducted before the beginning of the project also showed that there are undeniably 'good' aspects to the use of social media. These are features that contribute positively to well-being, and include:
+On the other hand, prior research conducted before the commencement of the project showed that there are also 'good' aspects to the use of social media. These are features that contribute positively to well-being, and include the following examples:
 
-Sharing feelings and stories
-Learning and understanding the self through writing and self-expression
-Finding out about real-life events, leading to 'traditional' social interaction 
-Building friendships 
+- Sharing feelings and stories
+- Learning and understanding the self through writing and self-expression
+- Finding out about real-life events, leading to 'traditional' social interaction 
+- Building friendships 
 
-Overall, social networks may be looked at as a double-edged sword for teens and young adults. Among other things, they are a source of anxiety and concern for self-image, but also a method through which they can build friendships, express themselves and learn.
+Overall, social networks may be deemed a double-edged sword for teens and young adults. Amongst other things, they are a source of anxiety and concern for self-image, but also a method through which people can build friendships, express themselves and learn.
 
 
 #### Existing solutions and critique
 
-Existing Solutions & Critique
-
 ##### Articles
-The main existing solutions towards the negative effects of well-being by social media are in education and campaigns which spread awareness. 
 
-In attempting to find existing solutions, many articles were found on popular websites detailing how and why users should detach their lives from social media. Some of these are linked below:
+The solutions focused on addressing the negative effects of well-being caused by social media are largely educational and campaigns which spread awareness of these after-effects of excessive social media usage. 
+
+In our analysis of solutions available, we found several articles on popular websites detailing why and how users should detach their lives from social media. The key articles can be accessed via the links stated below:
 
 * [5 Reasons Why You Should Start Deleting Facebook Friends | MakeUseOf](https://www.makeuseof.com/tag/5-reasons-start-deleting-facebook-friends/)
 * [Can Deleting Facebook Friends Improve Your Life? | Psychology Today](https://www.psychologytoday.com/au/blog/millennial-media/201108/can-deleting-facebook-friends-improve-your-life)
 * [Unfollowing all my Facebook friends | Damián Le Nouaille, Medium](https://medium.com/@damln/unfollowing-all-my-facebook-friends-part-1-730ae3bc2de3)
 * [Smartphones are driving us to distraction. Here’s help. | ComputerWorld](https://www.computerworld.com/article/3233286/smartphones/smartphones-are-driving-us-to-distraction-here-s-help.html)
 
-Here, the third article detailing how readers should unfollow all of their Facebook friends along with groups, organizations and public figures appeared to be the most interesting. The end goal to the method provided was to completely clear the Facebook feed, and while this was thought to be drastic, its advantage would be that users would still be connected will all of their Facebook friends. Unfriending may be seen by others as hostile, and unfollowing achieves the same result, without the negative impact on how others see the user.
+Notably, the third article, whichh detailed how readers should unfollow all of their Facebook friends along with groups, organizations and public figures appeared to be the most intriguing. The desired outcome of the method described was to completely clear one's Facebook feed. While this was thought to be rather drastic, its main advantage would be that users would still be connected with all of their Facebook friends. The act of "unfriending" may be perceived by others as a hostile action. However, unfollowing achieves the same result, without the negative impact on how others view the user.
 
-The main problem with each of these educational articles, however, is that while readers may understand why they should reduce their footprint on social media after reading them, they don't enforce readers to take action or change the habits that they already have.
+The main problem with these educational articles is that while readers may understand why they should reduce their footprint on social media after reading them, they are not driven to take action or change their exisiting habits that.
 
 ##### RSPH Awareness Campaigns
 ![#StatusOfMind Report Cover](https://www.rsph.org.uk/uploads/assets/derivatives/featuredpanelimage_852bc4924d42a7dc79b182d4b566e15c/f031018f-3134-4da1-91b802d2889fa67d.jpg)
 
-The Royal Society for Public Health (RSPH) from the UK has a social media campaign for raising awareness about social media called #StatusOfMind, which is backed by a report and many articles detailing their discovered adverse effects of social media. More recently, they have also been running a ScrollFreeSeptember campaign, which encourages youth to turn off social media over the month of September.
+The Royal Society for Public Health (RSPH) from the UK has a social media campaign for raising awareness about social media called #StatusOfMind, which is backed by a report and several articles detailing their discovered adverse effects of social media. More recently, they have also been running a ScrollFreeSeptember campaign, which encourages youth to turn off social media over the month of September.
 
 The impact of these campaigns is difficult to judge. As they have been centred around the UK, the level of awareness reached by these campaigns isn't apparent in Australia. One identified advantage of the RSPH initiatives, however, is that the ScrollFreeSeptember campaign encourages viewers to take action over a full month. Those that participate would then be able to see the advantages of stopping social media use, potentially adjust their habits afterwards. Another advantage is that the #StatusOfMind campaign emphasizes that some social networks have more positive impacts than others. YouTube is promoted as the healthiest social network to use while Instagram is promoted as being the worst.
 
