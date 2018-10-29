@@ -4,6 +4,7 @@ Project Repository for Social Media &amp; Health group
 Team Name: Anti-Social
 
 ## 1.0 Promotional Materials
+
 ### 1.1 Exhibition Poster
 
 ![final-poster](https://github.com/deco3500-2018/social-media/blob/master/images/final-poster.jpg)
@@ -18,7 +19,9 @@ Team Name: Anti-Social
       
 
 ## 2.0 Prototypes
-Paper Prototype - images are uploaded (social-media/images) (link)
+
+Paper Prototype - images are uploaded (social-media/images)
+
 Invsionapp prototype - https://projects.invisionapp.com/share/6KOC0DHF3Y4#/screens 
 
 ## 3.0 Project Summary 
@@ -32,6 +35,7 @@ We also strived to develop a working and presentable prototype which presents a 
 ## 4.0 Project Process
 
 ### Phase 1
+
 #### Research 
 
 From the initial research conducted, we found the use of social networks such as Facebook, Instagram and Snapchat can lead to reductions in well-being related to lowered self-confidence and life satisfaction, feelings of exclusion, anxiety, lowered self-awareness, depression and loneliness. It is commonly understood that these effects arise from users comparing themselves with others, leading to social media platforms becoming a 'competition' for beauty and self-image.
@@ -91,12 +95,7 @@ The design opportunity of this project is to enhance the quality of time on soci
 
 As there are no existing solutions to the problem space which uses technology to shape users’ behaviour, this would be an interesting design opportunity to explore. The final presented solution may come in the form of a mobile application, web application or tangible computing device and may use persuasive computing ideas to change behaviour.
 
-Some initial concepts that we intend to explore can be found in the link below (wiki)
-
-*** Link to wiki
-
-
-
+Some initial concepts with elaboration that we intend to explore can be found under Wiki/project proposal
 
 #### interviews/surveys
 
@@ -108,41 +107,41 @@ Another notable observation was the important role that perception played in our
 
 To sum it up, our two key takeaways from the survey were that people valued options and their reputation above everything else. Hence, our proposed solution has to incorporate those points to be effective. 
 
-*****interviews' results shown and conclude findings
+*****insert interview results link after uploaded them
 
 #### our design and wireframe
 
 Our team moved on with coming up with some low fidelity prototype using Microsoft Word.  
-
-******insert images
+Images can be found under folder /images.
 
 # phase2
 
-##### Requirement Gathering
+## Requirement Gathering
 
-
-#### user testing (paper prototype)
+#### User Testing (paper prototype)
 
 Using the paper prototype, our team proceeded to conduct user testing and gather additional feedback. We also worked concurrently to develop the pages on invisionapp, incorporating colours and designing a workflow for the prototype.
 
 The plan was to obtain feedback from the paper prototype and incorporate changes to the medium-fidelity prototype on invsionapp. 
+User testing results can be found in folder /....
 
+#### Invisionapp Development
 
-#### invisionapp development
+The actionable feedback we gathered from the paper prototype are:
 
-the feedback we gathered from the paper prototype are ...... (refer to the paper prototype interview)
+- Consider reducing the number of tabs on the homepage (combine some of them if similar), some could be confusing and repetitive.
+- Keep the colour of the interface simple and similar to Facebook and Instagram if possible.
+- Consider having more selections for the drop down nav bar.
 
 ##### Changes 
 
 Based on the feedback received, we made the necessary changes to the interface to make the app more intuitive and easy to navigate. 
-changes can be seem below:
+The main key change was the words used for the options in the homepage. We observed that some of the participants were taking some time to understand the words on the homepage when executing the tasks given. 
 
-The key changes were as follows:
 
 ### Phase 3
 
-#### user testing on invisionapp 
-
+#### User Testing on Invisionapp 
 
 We conducted user testing using invisionapp and gathered the following feedback:
 - The colour on the pages was too bright. Consider following the layout on Instagram and Facebook which used white as their background colour. 
@@ -153,10 +152,13 @@ We conducted user testing using invisionapp and gathered the following feedback:
 In conclusion, we found that the overall layout was intuitive and the site was relatively easy to navigate due to the straightforward workflow. Having said that, some minor amendments would simplify the site’s content and design, thereby enhancing the overall user experience.
 
 
-#### final touch up
+#### Final Touch Up
+
 We made changes to the colour scheme and wording of the homepage to create 'familiarity' for the users. This was in response to their comments that similarities to Facebook and Instagram would serve to enhance their overall ease of usage. The number of tabs was also reduced to prevent the site from looking cluttered and overwhelming users with information. Ultimately, this would help to draw users’ attention to key content and direct their focus accordingly. 
 
 #### end product
+
+*Link
 
 
 
