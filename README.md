@@ -16,55 +16,6 @@
 
 * Functional High Fidelity Prototype
 
-# Installing the Functional Prototype
-
-To install the functional prototype on your local machine, first clone this repository onto your computer. These instructions assume you're on a Mac or Linux machine.
-
-```
-git clone https://github.com/deco3500-2018/social-media.git
-```
-
-Then install Node and NPM using nvm by following the instructions on this page:
-
-```
-https://github.com/creationix/nvm
-```
-
-*Make sure you have python 2.7 installed.*
-
-You can check this by running
-
-```
-python -V
-```
-
-Start up MySQL and create a new database. Import the dummy data from [`dummy-data/InstagramEmotions.sql`](https://github.com/deco3500-2018/social-media/blob/master/dummy-data/InstagramEmotions.sql) into the database.
-
-Configure the server to access the newly created database. To do this, create a file named `config.js` inside `/server/` and fill with the following contents. Make sure to replace the config details with the details pointing to the database you just created.
-
-```
-// config.js
-var config = {
-    db: {
-        host: 'localhost',
-        port: 8889,
-        database: 'InstagramEmotions',
-        username: 'root',
-        password: 'root',
-    }
-};
-
-module.exports = config;
-```
-
-In `server/python`, create a file called `login.config` and inside it put the login details to an Instagram account. It is highly recommended that you use the details for a test account.
-
-
-
-
-# Using the Functional Prototype
-
-
 ## 1.0 Promotional Materials
 
 ### 1.1 Exhibition Poster
