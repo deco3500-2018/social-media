@@ -2,7 +2,7 @@
 
 Team Name: Anti-Social
 
-*Project Description: Blaze promotes positive social media interactions to help you reduce the negative aspects of Facebook and Instagram.*
+Project Description: *Blaze promotes positive social media interactions to help you reduce the negative aspects of Facebook and Instagram.*
 
 # Repository Summary
 
