@@ -18,7 +18,6 @@
 * What is your least favourite part about using social media?
 * What are your thoughts on your own social media usage?
 * What do you think of your friends social media usage compared to you?
-* 
 * How many friends do you have on (insert most used platform as mentioned above)?
 * How many of those friends do you constantly keep in touch with?
 * Why do you no longer keep in contact with these friends?
