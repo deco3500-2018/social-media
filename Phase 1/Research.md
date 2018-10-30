@@ -71,7 +71,7 @@ Another notable observation was the important role that perception played in our
 
 To sum it up, our two key takeaways from the survey were that people valued options and their reputation above everything else. Hence, our proposed solution has to incorporate those points to be effective. 
 
-*****insert interview results link after uploaded them
+***Interview results can be found in interview results folder
 
 #### our design and wireframe
 
