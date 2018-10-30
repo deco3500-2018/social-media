@@ -1,6 +1,6 @@
-# phase2
+## Phase2
 
-## Requirement Gathering
+### Requirement Gathering
 
 #### User Testing (paper prototype)
 
