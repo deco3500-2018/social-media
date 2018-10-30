@@ -66,12 +66,12 @@ At this phase, we are trying to gather as much information as we could by conduc
 
 Overall, social networks may be deemed a double-edged sword for teens and young adults. Amongst other things, they are a source of anxiety and concern for self-image, but also a method through which people can build friendships, express themselves and learn.
 
-#### our design and wireframe
+#### Our Design and Wireframe
 
 Our team moved on with coming up with some low fidelity prototype using Microsoft Word.  
 Images can be found [here](https://github.com/deco3500-2018/social-media/tree/master/images)
 
-### Phase2
+### Phase 2
 
 ### Requirement Gathering
 
