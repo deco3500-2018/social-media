@@ -76,5 +76,5 @@ To sum it up, our two key takeaways from the survey were that people valued opti
 #### our design and wireframe
 
 Our team moved on with coming up with some low fidelity prototype using Microsoft Word.  
-Images can be found under folder /images.
+Images can be found in [low fidelity images](https://github.com/deco3500-2018/social-media/tree/master/images)
 
