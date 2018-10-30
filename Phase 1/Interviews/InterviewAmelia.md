@@ -24,7 +24,8 @@
 -     They were friends met along the way and I do not see a need to establish a closer friendship. So friends on social media would suffice.
 ##### Do you find staying friends with these people on social media meaningful to your life?
 -     Yes, broaden my horizons and know more about the world. 
-How would you feel if you were no longer friends with the people you don’t constantly stay in contact with? ambivalent.
+##### How would you feel if you were no longer friends with the people you don’t constantly stay in contact with? 
+-     ambivalent.
 
 
 ### Concept 
