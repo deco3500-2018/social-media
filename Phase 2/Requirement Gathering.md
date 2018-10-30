@@ -2,6 +2,12 @@
 
 ### Requirement Gathering
 
+### Paper Prototype
+![PP](https://github.com/deco3500-2018/social-media/blob/master/images/Low-fidelity-prototype-new-1.jpg)
+![PP](https://github.com/deco3500-2018/social-media/blob/master/images/Low-fidelity-prototype-new-2.jpg)
+![PP](https://github.com/deco3500-2018/social-media/blob/master/images/Low-fidelity-prototype-new-3.jpg)
+![PP](https://github.com/deco3500-2018/social-media/blob/master/images/Low-fidelity-prototype-new-4.jpg)
+
 #### User Testing (paper prototype)
 
 Using the paper prototype, our team proceeded to conduct user testing and gather additional feedback. We also worked concurrently to develop the pages on invisionapp, incorporating colours and designing a workflow for the prototype.
