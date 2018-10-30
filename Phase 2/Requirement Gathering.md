@@ -105,7 +105,7 @@ Tips for healthy social media use:
 Using the paper prototype, our team proceeded to conduct user testing and gather additional feedback. We also worked concurrently to develop the pages on invisionapp, incorporating colours and designing a workflow for the prototype.
 
 The plan was to obtain feedback from the paper prototype and incorporate changes to the medium-fidelity prototype on invsionapp. 
-User testing results can be found in folder /....
+
 
 ### Invisionapp Development
 
