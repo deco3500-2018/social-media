@@ -123,9 +123,9 @@ To sum it up, our two key takeaways from the survey were that people valued opti
 Our team moved on with coming up with some low fidelity prototype using Microsoft Word.  
 Images can be found under folder /images.
 
-# phase2
+### phase2
 
-## Requirement Gathering
+### Requirement Gathering
 
 #### User Testing (paper prototype)
 
