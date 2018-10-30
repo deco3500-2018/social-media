@@ -21,10 +21,10 @@ Team Name: Anti-Social
 ## 2.0 Prototypes
 
 Low Fidelity Prototype (Paper Prototype) 
-![PP](https://github.com/deco3500-2018/social-media/blob/master/Low-fidelity-prototype-new-1.jpg)
-![PP](https://github.com/deco3500-2018/social-media/blob/master/Low-fidelity-prototype-new-2.jpg)
-![PP](https://github.com/deco3500-2018/social-media/blob/master/Low-fidelity-prototype-new-3.jpg)
-![PP](https://github.com/deco3500-2018/social-media/blob/master/Low-fidelity-prototype-new-4.jpg)
+![PP](https://github.com/deco3500-2018/social-media/blob/master/images/Low-fidelity-prototype-new-1.jpg)
+![PP](https://github.com/deco3500-2018/social-media/blob/master/images/Low-fidelity-prototype-new-2.jpg)
+![PP](https://github.com/deco3500-2018/social-media/blob/master/images/Low-fidelity-prototype-new-3.jpg)
+![PP](https://github.com/deco3500-2018/social-media/blob/master/images/Low-fidelity-prototype-new-4.jpg)
 
 
 Medium Fidelity Prototype - https://projects.invisionapp.com/share/6KOC0DHF3Y4#/screens
