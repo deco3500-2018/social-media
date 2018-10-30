@@ -71,7 +71,7 @@ Overall, social networks may be deemed a double-edged sword for teens and young 
 Our team moved on with coming up with some low fidelity prototype using Microsoft Word.  
 Images can be found [here](https://github.com/deco3500-2018/social-media/tree/master/images)
 
-### phase2
+### Phase2
 
 ### Requirement Gathering
 
