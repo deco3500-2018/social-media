@@ -56,7 +56,7 @@ We also strived to develop a working and presentable prototype which presents a 
 
 ## 4.0 Project Process
 
-### Phase 1
+### Phase 1: Ideas and Concept
 
 #### Research 
 
@@ -71,9 +71,7 @@ Overall, social networks may be deemed a double-edged sword for teens and young 
 Our team moved on with coming up with some low fidelity prototype using Microsoft Word.  
 Images can be found [here](https://github.com/deco3500-2018/social-media/tree/master/images)
 
-### Phase 2
-
-### Requirement Gathering
+### Phase 2: Requirements Gathering
 
 #### User Testing (paper prototype)
 
@@ -81,7 +79,7 @@ Using the paper prototype, our team proceeded to conduct user testing and gather
 
 The plan was to obtain feedback from the paper prototype and incorporate changes to the medium-fidelity prototype on invsionapp. 
 
-### Phase 3
+### Phase 3: Finalization
 
 #### User Testing on Invisionapp 
 
