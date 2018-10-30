@@ -1,6 +1,6 @@
-##Interview questions
+## Interview questions
 
-####Part I
+#### Part I
 
 What is your most used social media platform?
 What is your main reason for using social media?
@@ -17,7 +17,7 @@ Do you find staying friends with these people on social media meaningful to your
 How would you feel if you were no longer friends with the people you don’t constantly stay in contact with?
 ADD any more questions you would like to add to the interview
 
-####Part II
+#### Part II
 
 By now it should be obvious what our idea is, but present our idea and ask for advice on how our goal could be completed.
 
@@ -27,7 +27,7 @@ Your choice: Present 2 of the ideas in the list of concepts from the proposal do
 
 
 
-###Outcome from the interview
+### Outcome from the interview
 
 From this interview, we want to have an understanding of what social media platform we will focus our prototype on
 What aspects people favour most or least and develop potential aspects into our design.
