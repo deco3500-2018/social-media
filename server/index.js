@@ -184,22 +184,26 @@ app.get('/recommendations-data', (req, res) => {
                     console.log(data.toString());
                 });
                 pythonProcess.on('close', () => {
-                    let userJSON = JSON.parse(output);
-                    console.log(userJSON);
-                    res({
-                        ...user,
-                        name: userJSON.full_name,
-                        profilePic: userJSON.profile_pic_url,
-                        photos: userJSON.feed.items.slice(0, 6).map(item => {
-                            if (item.image_versions2) {
-                                return item.image_versions2.candidates[1].url
-                            } else if (item.carousel_media) {
-                                return item.carousel_media[0].image_versions2.candidates[1].url
-                            }
-                        }),
-                        postsPerWeek: postsPerWeek(userJSON),
-                        averageLikes: averageLikes(userJSON)
-                    });
+                    try {
+                        let userJSON = JSON.parse(output);
+                        console.log(userJSON);
+                        res({
+                            ...user,
+                            name: userJSON.full_name,
+                            profilePic: userJSON.profile_pic_url,
+                            photos: userJSON.feed.items.slice(0, 6).map(item => {
+                                if (item.image_versions2) {
+                                    return item.image_versions2.candidates[1].url
+                                } else if (item.carousel_media) {
+                                    return item.carousel_media[0].image_versions2.candidates[1].url
+                                }
+                            }),
+                            postsPerWeek: postsPerWeek(userJSON),
+                            averageLikes: averageLikes(userJSON)
+                        });
+                    } catch(err) {
+                        console.log(err);
+                    }
                 });
             });
         })).then(users => {
