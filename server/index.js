@@ -54,7 +54,7 @@ db.connect((err) => {
 });
 
 const app = express();
-const port = 80
+const port = 3000
 
 app.use(express.static('static'))
 app.use( bodyParser.json() );
