@@ -178,6 +178,7 @@ app.get('/recommendations-data', (req, res) => {
                 let output = "";
                 let pythonProcess = spawn('python', [`python/get_user_cached.py`, "-u", `"${igUsername}"`, "-p", `"${igPassword}"`, "-settings", `${__dirname}/python/credentials.json`, "-uu", `${user.username}`]);
                 pythonProcess.stdout.on('data', (data) => {
+                    console.log(data.toString());
                     output += data.toString();
                 });
                 pythonProcess.stderr.on('data', (data) => {
